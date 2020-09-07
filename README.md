@@ -19,7 +19,7 @@
   </a>
 </p>
 
-Venomancer 的 Laravel/Lumen 套件.
+[Venomancer](https://github.com/qq15725/venomancer) 的 Laravel/Lumen 套件.
 
 - 基于 puppeteer 的 headless-chrome 能力封装及性能优化
   - 支持 html 渲染生成图片
