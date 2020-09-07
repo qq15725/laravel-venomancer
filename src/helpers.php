@@ -29,7 +29,7 @@ if (!function_exists('highchart')) {
     function highchart(array $highcharts): string
     {
         return screenshot(
-            view('venomancer.highchart', compact('highcharts'))->render()
+            view('venomancer::highchart', compact('highcharts'))->render()
         );
     }
 }

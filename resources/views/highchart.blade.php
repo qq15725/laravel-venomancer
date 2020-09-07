@@ -19,7 +19,7 @@
   if (items.length === undefined) {
     items = [items]
   }
-  render.forEach(function (highchart, index) {
+  items.forEach(function (highchart, index) {
     var div = document.createElement('div')
     div.id = 'highchart-' + index
     document.body.appendChild(div)

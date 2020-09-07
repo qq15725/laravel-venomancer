@@ -48,15 +48,29 @@ $router->get('highchart', function () {
             'chart' => [
                 'type' => 'line',
             ],
+            'plotOptions' => [
+                'series' => [
+                    'animation' => false
+                ]
+            ],
             'title' => [
                 'text' => '标题'
             ],
-            'series' => [1, 2, 3, 4]
+            'credits' => [
+                'enabled' => false
+            ],
+            'series' => [
+                [
+                    'name' => '数值',
+                    'data' => [1, 2, 3, 4]
+                ]
+            ]
         ]), 200, ['Content-Type' => 'image/jpeg']
     );
 });
 
 // 访问 /highchart 试试
+// 选项详情请查看 highchart api
 ```
 
 ## License
