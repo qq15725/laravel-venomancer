@@ -3,7 +3,6 @@
 namespace Wxm\LaravelVenomancer\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Collection;
 use Wxm\LaravelVenomancer\Facades\Venomancer;
 use Wxm\Venomancer\Application;
 
