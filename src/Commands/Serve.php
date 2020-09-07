@@ -5,6 +5,7 @@ namespace Wxm\LaravelVenomancer\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
 use Wxm\LaravelVenomancer\Facades\Venomancer;
+use Wxm\Venomancer\Application;
 
 class Serve extends Command
 {
@@ -34,8 +35,10 @@ class Serve extends Command
      *
      * @param Venomancer $venomancer
      */
-    public function __construct(Venomancer $venomancer)
+    public function __construct(Application $venomancer)
     {
+        parent::__construct();
+
         $this->venomancer = $venomancer;
     }
 

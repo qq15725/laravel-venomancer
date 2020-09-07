@@ -47,7 +47,7 @@ class ServiceProvider extends BaseServiceProvider
 
         $this->mergeConfigFrom(dirname(__DIR__) . '/config/venomancer.php', 'venomancer');
 
-        $this->app->singleton('Venomancer', function () {
+        $this->app->singleton(Application::class, function () {
             return new Application(config('venomancer', []));
         });
     }

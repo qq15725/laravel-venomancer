@@ -2,6 +2,8 @@
 
 namespace Wxm\LaravelVenomancer\Facades;
 
+use Wxm\Venomancer\Application;
+
 /**
  * @method static string screenshot(string $content, bool $fullPage = true, bool $scroll = true, int $scrollDistance = 100, int $scrollInterval = 0)
  *
@@ -17,6 +19,6 @@ class Venomancer extends \Illuminate\Support\Facades\Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Venomancer';
+        return Application::class;
     }
 }
