@@ -31,13 +31,34 @@ Venomancer 的 Laravel/Lumen 套件.
 
 ```bash
 npm install venomancer --save
-```
 
-### Laravel/Lumen
-
-```bash
 composer require wxm/laravel-venomancer
 ```
+
+### Laravel
+
+1. 注册 ServiceProvider (laravel > 5.5 不需要注册):
+    ```php
+    Wxm\LaravelVenomancer\ServiceProvider::class
+    ```
+    
+2. 发布配置：
+    ```shell
+    php artisan vendor:publish --provider="Wxm\LaravelVenomancer\ServiceProvider" --force
+    ```
+    
+### Lumen
+
+1. 注册 ServiceProvider:
+   
+    `bootstrap/app.php` 下添加
+
+    ```php
+    $app->register(Wxm\LaravelVenomancer\ServiceProvider::class);
+    ``` 
+2. 手动复制配置文件
+    
+## 使用
 
 ```php
 <?php
