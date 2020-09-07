@@ -1,0 +1,42 @@
+{
+    "name": "wxm/laravel-venomancer",
+    "type": "library",
+    "description": "venomancer for laravel",
+    "keywords": [
+        "php",
+        "laravel",
+        "venomancer"
+    ],
+    "homepage": "https://github.com/qq15725/venomancer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wxm",
+            "email": "157215725@qq.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "wxm/venomancer": "^0.0.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wxm\\LaravelVenomancer\\": "src"
+        },
+        "files": [
+           "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+          "providers": [
+              "Wxm\\LaravelVenomancer\\ServiceProvider"
+          ]
+        },
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
